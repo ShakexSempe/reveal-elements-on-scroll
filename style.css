@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px; */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #262626;
+    color: #eee;
+}
+
+.skills-item {
+    max-width: 80%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background-image: url('../img/lee-campbell-DtDlVpy-vvQ-unsplash.jpg');
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    text-overflow: ellipsis;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 300px; */
+
+    /*border radius not visiblie without hidden overflow*/
+}
+
+.skills-item h2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 3em;
+    transition: .5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.skills-item h2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e02bff;
+    transform-origin: right;
+    transition: 0.5s;
+}
+
+.skills-item .icon {
+    position: relative;
+    margin: 5px 0 0;
+    padding: 0;
+    display: block;
+    width: 100px;
+    transition: .5s;
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
+
+.skills-item .icon::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffeb3b;
+    transform-origin: right;
+    transition: 0.5s;
+}
+
+.skills-item a{
+    position: relative;
+    background: #ddd;
+    color: #262626;
+    padding: 15px 30px;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 1s;
+}
+
+
+.skills-item ul li{
+    color: #ddd;
+    font-size: 1.3em;
+    margin: 10px;
+    transition: 1s;
+}
