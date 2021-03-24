@@ -146,7 +146,7 @@ section .skills-item ul li[data-scroll="in"]{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ffeb3b;
+    background: #f8a0ae;
     transform-origin: left;
     transition: 0.5s;
 }
