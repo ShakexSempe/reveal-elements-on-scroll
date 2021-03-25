@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=New+Tegomin&family=Spectral&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 section {
     /* display: flex;
     align-items: center;
@@ -50,6 +51,7 @@ section {
     transition: .5s;
     transform-origin: left;
     transform: scaleX(0);
+    font-family: 'Spectral', serif;
 }
 
 /*scroll animation*/
@@ -115,6 +117,8 @@ section .skills-item h2[data-scroll="in"]::before {
     transition: 1s;
     transform: translateX(100px);
     opacity: 0;
+    font-family: 'New Tegomin', serif;
+
 }
 
 .skills-item a[data-scroll="in"] {
@@ -131,6 +135,7 @@ section .skills-item h2[data-scroll="in"]::before {
     margin: 10px;
     transition: 1s;
     transform: scaleX(0);
+    font-family: 'Mukta', sans-serif;
 }
 section .skills-item ul li[data-scroll="in"]{
     transform: scaleX(1);
