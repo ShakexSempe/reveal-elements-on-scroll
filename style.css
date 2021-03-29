@@ -23,23 +23,6 @@ section {
 
 .skills-item {
     max-width: 80%;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    background-image: url('../img/lee-campbell-DtDlVpy-vvQ-unsplash.jpg');
-    background-size: cover;
-    margin: 10px 5%;
-    position: relative;
-    z-index: 1;
-    text-overflow: ellipsis;
-    transition: 0.3s ease-in-out;
-    overflow: hidden;
-    border-radius: 10px;
-    height: 300px; */
-
-    /*border radius not visiblie without hidden overflow*/
 }
 
 .skills-item h2 {
@@ -89,7 +72,7 @@ section .skills-item h2[data-scroll="in"]::before {
 }
 .skills-item .icon img[data-scroll="in"] {
     opacity: 1;
-    transition-delay: s;
+    transition-delay: .5s;
 }
 
 
