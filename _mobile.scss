@@ -1,0 +1,36 @@
+@media screen and (max-width: 450px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid rgba(255, 0, 0, 0.336);
+        padding: 10px;
+    }
+
+    .skills-item h2 {
+        font-size: 2.5em;
+    }
+
+    .skills-item a {
+        position: relative;
+        background: #ddd;
+        color: #262626;
+        padding: 5px 5px;
+        margin: 0;
+        width: 50%;
+    }
+
+    .skills-item ul li {
+        font-size: 1.1em;
+    }
+
+}
