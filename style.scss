@@ -6,36 +6,42 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .container {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    background: #000;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    background-image: url(../nadine-shaabana-0xD40qm07X0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100vw;
-    overflow: hidden;
 
     .skills-bottom {
         display: flex;
         position: relative;
         width: 70%;
-        height: 100vh;
+        height: 95vh;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 1em auto;
-        background: #262626;
+        background: #262626e3;
         color: #eee;
     }
 
     .skills-item {
         max-width: 90%;
-        height: 70vh;
+        height: 100%;
         background: transparent;
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding: 20px;
 
     }
@@ -76,7 +82,8 @@
 
     .skills-item .icon img {
         position: relative;
-        margin: 0 auto;
+        margin: 0px auto;
+        margin-bottom: 50px;
         padding: 0;
         display: block;
         width: 100px;
