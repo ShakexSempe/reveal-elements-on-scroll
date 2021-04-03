@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     .container {
         grid-template-columns: 1fr;
 
@@ -8,7 +8,12 @@
         
         h2 {
             font-size: 3em;
+            margin-bottom: 60px;
         }
+        .icon img{
+            margin-bottom: 150px;
+        }
+
         a {
             position: relative;
             background: #ddd;
