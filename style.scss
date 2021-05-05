@@ -21,6 +21,8 @@ body{
     background-position: center;
     background-attachment: fixed;
     overflow-x: hidden;
+    
+    
 
     .skills-bottom {
         display: flex;
@@ -35,8 +37,13 @@ body{
         background: #77777767 ;
         color: #eee;
         border: 1px solid rgba(145, 143, 143, 0.521);
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);  
+        transform: rotateY(40deg);
+        box-shadow: -25px 10px #000;
+        animation: swing 4s linear infinite;
+
     }
+    
     .skills-bottom::after{
         content: '';
         position: absolute;
@@ -45,7 +52,14 @@ body{
         width: 100%;
         height: 100%;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), #0415632c);
-        
+    
+    }
+
+    @keyframes swing {
+        50% {
+            transform: rotateY(-30deg);
+            box-shadow: 15px 15px 3px #000;
+        }
     }
 
     .skills-item {
@@ -69,6 +83,7 @@ body{
         transform-origin: left;
         transform: scaleX(0);
         font-family: 'Spectral', serif;
+        text-shadow: 3px 3px 2px #000;
     }
 
     /*scroll animation*/
@@ -83,7 +98,10 @@ body{
         left: 0;
         width: 100%;
         height: 100%;
-        background: #e02bff;
+        background-image: linear-gradient(90deg, #333, #000);
+        // background: #333;
+        border: 1px solid rgb(112, 111, 111);
+        border-radius: 10px;
         transform-origin: right;
         transition: 0.5s;
     }
@@ -144,6 +162,8 @@ body{
         transform: scaleX(0);
         font-family: 'Mukta', sans-serif;
         text-align: left;
+
+        
     }
 
     section .skills-item ul li[data-scroll="in"] {
@@ -160,7 +180,7 @@ body{
         left: 0;
         width: 100%;
         height: 100%;
-        background: #f8a0ae;
+        background-image: linear-gradient(90deg, #333, purple);
         transform-origin: left;
         transition: 0.5s;
     }
@@ -169,7 +189,22 @@ body{
         transform: scaleX(0);
         transition-delay: 1s;
     }
+    section .skills-item ul li{
+        padding-left: .5em;
+    }
+    li::marker {
+        color: #ddd;
+        transition: color 1s;
+        font-size: .8em;
+        content: '\f1c9';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        margin-right: 20px; 
+      }
+    
 }
+
+
 
 @import 'mobile';
 
