@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=New+Tegomin&family=Spectral&display=swap');
-
+@import 'variables';
+@import 'mixins';
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +29,7 @@ body{
         display: flex;
         position: relative;
         width:80%;
-        min-height: 95vh;
+        height: 95vh;
         border-radius: 10px;
         display: flex;
         justify-content: center;
@@ -117,21 +118,23 @@ body{
         transition-delay: .5s;
     }
 
-    .skills-item .icon img {
+    .skills-item .icon i {
         position: relative;
         margin: 0px auto;
+        font-size: 100px;
         margin-bottom: 50px;
         padding: 0;
         display: block;
         width: 100px;
         transition: 1s;
         transform-origin: right;
-        opacity: 0;
+        opacity: 1;
+
     }
 
-    .skills-item .icon img[data-scroll="in"] {
+    .skills-item .icon i[data-scroll="in"] {
         opacity: 1;
-        transition-delay: .5s;
+        transition-delay: 1s;
     }
 
 

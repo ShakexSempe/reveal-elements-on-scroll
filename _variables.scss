@@ -1,0 +1,51 @@
+$html-color: orange;
+$css-color: blue;
+$sass-color: pink;
+$js-color: yellow;
+$node-color: lightgreen;
+$react-color: skyblue;
+$git-color: #eee;
+
+
+@mixin setColor($color) {
+    i {
+        background-color: $color;
+    }
+
+    h2 {
+        text-shadow: 2px 2px 3px $color;
+    }
+}
+
+
+$icon-gradient: linear-gradient(30deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.384));
+
+
+#html {
+    @include setColor($html-color)
+}
+#css {
+    @include setColor($css-color)
+}
+#sass {
+    @include setColor($sass-color)
+}
+#js {
+    @include setColor($js-color)
+}
+#node {
+    @include setColor($node-color)
+}
+#react {
+    @include setColor($react-color)
+}
+#git {
+    @include setColor($git-color)
+}
+
+.icon i {
+    background-image: $icon-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
