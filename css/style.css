@@ -12,7 +12,7 @@ body {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  background-image: url(../milky_way_galaxy_2-wallpaper-1280x800.jpg);
+  background-image: url(../anaya-katlego-ZWQduAnJ8cg-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,14 +23,16 @@ body {
     display: flex;
     position: relative;
     width: 80%;
-    height: 95vh;
+    min-height: 50vh;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1em auto;
-    background: #262626e3;
-    color: #eee; }
+    background: #77777767;
+    color: #eee;
+    border: 1px solid rgba(145, 143, 143, 0.521);
+    backdrop-filter: blur(3px); }
   .container .skills-bottom::after {
     content: '';
     position: absolute;
@@ -38,7 +40,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparent; }
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), #0415632c); }
   .container .skills-item {
     max-width: 90%;
     height: 100%;
