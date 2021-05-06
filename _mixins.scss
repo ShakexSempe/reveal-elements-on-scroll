@@ -1,0 +1,21 @@
+@mixin setColor($color) {
+
+    .icon {
+        
+        i {
+            background-color: $color;
+        }
+    };
+
+    h2 {
+        text-shadow: 2px 2px 4px $color;
+    };
+
+    li {
+        text-shadow: 0 0 3px $color;
+    }
+
+    a {
+        border: 1px solid $color;
+    }
+};

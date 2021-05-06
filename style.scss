@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=New+Tegomin&family=Spectral&display=swap');
-
+@import 'variables';
+@import 'mixins';
 * {
     margin: 0;
     padding: 0;
@@ -21,36 +22,36 @@ body{
     background-position: center;
     background-attachment: fixed;
     overflow-x: hidden;
-    
-    
+
+
 
     .skills-bottom {
         display: flex;
         position: relative;
-        width:80%;
-        min-height: 95vh;
+        width: 80%;
+        height: 95vh;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 1em auto;
-        background: #77777767 ;
+        background: transparent;
         color: #eee;
-        border: 1px solid rgba(145, 143, 143, 0.521);
-        backdrop-filter: blur(3px);  
+        border: 1px solid rgba(185, 182, 182, 0.521);
+        backdrop-filter: blur(3px);
         transform: rotateY(40deg);
-        box-shadow: -25px 10px 10px rgba(0, 0, 0, 0.39);
+        box-shadow: -25px 10px 10px rgba(0, 0, 0, 0.822);
         animation: swing 4s linear infinite;
 
         &:hover {
             animation: none;
-        transform: none;
+            transform: none;
 
         }
     }
 
-    
-    .skills-bottom::after{
+
+    .skills-bottom::after {
         content: '';
         position: absolute;
         top: 0;
@@ -58,13 +59,13 @@ body{
         width: 100%;
         height: 100%;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), #0415632c);
-    
+
     }
 
     @keyframes swing {
         50% {
             transform: rotateY(-30deg);
-            box-shadow: 35px 15px 3px #000;
+            box-shadow: 35px 15px 3px rgba(0, 0, 0, 0.822);
         }
     }
 
@@ -117,21 +118,31 @@ body{
         transition-delay: .5s;
     }
 
-    .skills-item .icon img {
-        position: relative;
-        margin: 0px auto;
-        margin-bottom: 50px;
-        padding: 0;
-        display: block;
-        width: 100px;
-        transition: 1s;
-        transform-origin: right;
-        opacity: 0;
+    .icon {
+        i {
+            background-image: $icon-gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+
+
+            position: relative;
+            margin: 10px auto;
+            font-size: 100px;
+            padding: 0;
+            display: block;
+            width: 100px;
+            transition: 1s;
+            transform-origin: right;
+            opacity: 0;
+        }
     }
 
-    .skills-item .icon img[data-scroll="in"] {
+    
+    .skills-item .icon i[data-scroll="in"] {
         opacity: 1;
-        transition-delay: .5s;
+        transition-delay: 1s;
     }
 
 

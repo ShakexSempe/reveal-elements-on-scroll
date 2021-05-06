@@ -1,0 +1,42 @@
+@import 'mixins';
+
+$html-color: rgb(250, 102, 17);
+$css-color: rgb(25, 25, 250);
+$sass-color: rgb(245, 116, 137);
+$js-color: rgb(228, 228, 11);
+$node-color: lightgreen;
+$react-color: skyblue;
+$git-color: #000;
+
+
+
+
+
+$icon-gradient: linear-gradient(90deg, rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0));
+
+
+#html {
+    @include setColor($html-color)
+}
+#css {
+    @include setColor($css-color)
+}
+#sass {
+    @include setColor($sass-color)
+}
+#js {
+    @include setColor($js-color)
+}
+#node {
+    @include setColor($node-color)
+}
+#react {
+    @include setColor($react-color)
+}
+#git {
+    @include setColor($git-color)
+}
+
+
+
+
