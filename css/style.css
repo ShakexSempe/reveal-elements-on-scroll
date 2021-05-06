@@ -1,27 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=New+Tegomin&family=Spectral&display=swap");
 #html .icon i {
-  background-color: #fa6611; }
+  background-color: #f56d1f; }
 
 #html h2 {
-  text-shadow: 2px 2px 4px #fa6611; }
+  text-shadow: 2px 2px 4px #f56d1f; }
 
 #html li {
-  text-shadow: 0 0 3px #fa6611; }
+  text-shadow: 0 0 3px #f56d1f; }
 
 #html a {
-  border: 1px solid #fa6611; }
+  border: 1px solid #f56d1f; }
 
 #css .icon i {
-  background-color: #1919fa; }
+  background-color: #3232fc; }
 
 #css h2 {
-  text-shadow: 2px 2px 4px #1919fa; }
+  text-shadow: 2px 2px 4px #3232fc; }
 
 #css li {
-  text-shadow: 0 0 3px #1919fa; }
+  text-shadow: 0 0 3px #3232fc; }
 
 #css a {
-  border: 1px solid #1919fa; }
+  border: 1px solid #3232fc; }
 
 #sass .icon i {
   background-color: #f57489; }
@@ -72,16 +72,19 @@
   border: 1px solid skyblue; }
 
 #git .icon i {
-  background-color: #000; }
+  background-color: #fffbfb; }
 
 #git h2 {
-  text-shadow: 2px 2px 4px #000; }
+  text-shadow: 2px 2px 4px #fffbfb; }
 
 #git li {
-  text-shadow: 0 0 3px #000; }
+  text-shadow: 0 0 3px #fffbfb; }
 
 #git a {
-  border: 1px solid #000; }
+  border: 1px solid #fffbfb; }
+
+#git h2 {
+  text-shadow: 4px 4px 2px #000; }
 
 * {
   margin: 0;
