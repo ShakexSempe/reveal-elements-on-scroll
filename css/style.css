@@ -246,6 +246,13 @@ body {
     font-weight: 700;
     margin-right: 20px; }
 
+footer {
+  padding: 10px 0;
+  background: #000;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center; }
+
 @media screen and (max-width: 500px) {
   .container {
     grid-template-columns: 1fr; }
