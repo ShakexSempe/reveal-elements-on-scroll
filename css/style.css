@@ -173,8 +173,7 @@ body {
     transform-origin: left;
     font-family: 'Spectral', serif;
     text-shadow: 3px 3px 2px #000;
-    transform-style: preserve-3d;
-    order: 2; }
+    transform-style: preserve-3d; }
   .container .skills-item:hover.skills-item h2 {
     transform: translateZ(3em); }
   .container section .skills-item h2[data-scroll="in"] {
@@ -224,6 +223,8 @@ body {
     opacity: 0;
     border-radius: .5em;
     font-family: 'New Tegomin', serif; }
+    .container .skills-item a::before {
+      position: absolute; }
   .container .skills-item a[data-scroll="in"] {
     transform: translateX(0px);
     transition-delay: 1s;

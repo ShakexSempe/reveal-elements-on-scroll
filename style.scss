@@ -116,8 +116,6 @@ body{
         font-family: 'Spectral', serif;
         text-shadow: 3px 3px 2px #000;
         transform-style: preserve-3d;
-        // transform: translateZ(9em);
-        order: 2;
     }
     .skills-item:hover.skills-item h2 {
         transform: translateZ(3em) ;
@@ -189,6 +187,9 @@ body{
         border-radius: .5em;
         font-family: 'New Tegomin', serif;
 
+        &::before {
+            position: absolute;
+        }
     }
 
     .skills-item a[data-scroll="in"] {
