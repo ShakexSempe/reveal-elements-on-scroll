@@ -115,25 +115,39 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1em auto;
+    border-radius: 5px;
     background: transparent;
     color: #eee;
-    border: 1px solid rgba(185, 182, 182, 0.521);
     backdrop-filter: blur(3px);
-    transform: rotateY(40deg);
     box-shadow: -25px 10px 10px rgba(0, 0, 0, 0.822);
-    animation: swing 4s linear infinite;
-    transform-style: preserve-3d; }
+    transform-style: preserve-3d;
+    transition: 1s ease; }
     .container .skills-bottom:hover {
-      animation: none;
-      transform: none; }
-  .container .skills-bottom::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), #0415632c); }
+      transform: rotateY(40deg) rotateX(10deg); }
+    .container .skills-bottom::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      box-shadow: inset 4px 4px 5px #000a, inset -4px -4px 5px #ddda; }
+    .container .skills-bottom::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      border-radius: 5px;
+      transition: .5s ease;
+      box-shadow: inset 4px 4px 5px #ddda, inset -4px -4px 5px #000a; }
+    .container .skills-bottom:hover::before {
+      opacity: 0; }
+    .container .skills-bottom:hover::after {
+      opacity: 1; }
 
 @keyframes swing {
   50% {
@@ -148,7 +162,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    z-index: 20;
+    z-index: 2;
     cursor: pointer;
     transform-style: preserve-3d; }
   .container .skills-item h2 {
@@ -160,10 +174,9 @@ body {
     font-family: 'Spectral', serif;
     text-shadow: 3px 3px 2px #000;
     transform-style: preserve-3d;
-    transform: translateZ(9em);
     order: 2; }
   .container .skills-item:hover.skills-item h2 {
-    transform: translateZ(6em) translateX(3em); }
+    transform: translateZ(10em) translateX(0em); }
   .container section .skills-item h2[data-scroll="in"] {
     transform: scaleX(1); }
   .container .skills-item h2::before {
