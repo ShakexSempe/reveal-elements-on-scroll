@@ -120,7 +120,7 @@ body{
         order: 2;
     }
     .skills-item:hover.skills-item h2 {
-        transform: translateZ(10em) translateX(0em);
+        transform: translateZ(3em) ;
     }
     /*scroll animation*/
     section .skills-item h2[data-scroll="in"] {

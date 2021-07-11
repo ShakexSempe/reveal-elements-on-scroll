@@ -176,7 +176,7 @@ body {
     transform-style: preserve-3d;
     order: 2; }
   .container .skills-item:hover.skills-item h2 {
-    transform: translateZ(10em) translateX(0em); }
+    transform: translateZ(3em); }
   .container section .skills-item h2[data-scroll="in"] {
     transform: scaleX(1); }
   .container .skills-item h2::before {
