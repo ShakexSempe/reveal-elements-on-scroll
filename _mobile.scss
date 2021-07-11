@@ -1,6 +1,10 @@
 @media screen and (max-width: 500px) {
     .container {
         grid-template-columns: 1fr;
+        .skills-bottom {
+            margin: 3em auto;
+            height: 80vh;
+        }
 
         .skills-item {
             align-items: center;
